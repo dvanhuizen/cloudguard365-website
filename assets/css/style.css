@@ -1301,6 +1301,22 @@ p {
     display: flex;
   }
 
+  /* Contact knop als gewone link op mobiel */
+  .nav-cta {
+    background: none;
+    color: var(--color-text-secondary) !important;
+    padding: var(--space-md);
+    font-weight: 500;
+    box-shadow: none;
+  }
+
+  .nav-cta:hover {
+    background: var(--color-bg-hover);
+    color: var(--color-text-primary) !important;
+    transform: none;
+    box-shadow: none;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-2xl);
