@@ -983,23 +983,6 @@ p {
   box-shadow: var(--shadow-lg);
 }
 
-.module-card-featured {
-  border-color: var(--color-accent-blue);
-  background: linear-gradient(135deg, var(--color-bg-card) 0%, rgba(45, 140, 240, 0.05) 100%);
-  position: relative;
-}
-
-.module-card-featured::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--color-accent-blue), var(--color-accent-cyan));
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-}
-
 .module-card-header {
   display: flex;
   align-items: center;
@@ -1007,7 +990,16 @@ p {
 }
 
 .module-icon {
-  font-size: 2rem;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(45, 140, 240, 0.08);
+  border: 1px solid rgba(45, 140, 240, 0.15);
+  border-radius: var(--radius-md);
+  color: var(--color-accent-blue);
+  flex-shrink: 0;
 }
 
 .module-card h3 {
