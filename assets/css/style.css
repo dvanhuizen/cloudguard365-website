@@ -963,7 +963,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-lg);
-  align-items: start;
+  align-items: stretch;
 }
 
 .module-card {
@@ -975,6 +975,11 @@ p {
   flex-direction: column;
   gap: var(--space-md);
   transition: all var(--transition-base);
+  height: 100%;
+}
+
+.module-card .btn {
+  margin-top: auto;
 }
 
 .module-card:hover {
