@@ -184,8 +184,10 @@ p {
   top: 0;
   left: 0;
   right: 0;
+  height: 152px;
   background: var(--color-bg-primary);
   z-index: 1000;
+  overflow: visible;
 }
 
 .nav-logo {
@@ -1236,6 +1238,10 @@ p {
     padding: 0 var(--space-lg);
   }
 
+  .navbar {
+    height: 80px;
+  }
+
   .nav-container {
     height: 80px;
     padding: 0 var(--space-lg);
@@ -1316,6 +1322,10 @@ p {
 }
 
 @media (max-width: 480px) {
+  .navbar {
+    height: 68px;
+  }
+
   .nav-container {
     height: 68px;
     padding: 0 1rem;
