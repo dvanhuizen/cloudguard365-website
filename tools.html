@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CloudGuard365 Modules - Risky User Analyzer, Microsoft 365 Analyzer en Microsoft 365 Alerting voor je tenant security.">
+  <title>Modules - CloudGuard365</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Hoofdnavigatie">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/img/logo.png" alt="CloudGuard365" class="nav-logo-img">
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="tools.html" class="nav-link">Modules</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu openen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+<span class="section-label">Modules</span>
+        <h1 style="margin-bottom: 1rem;">Microsoft 365 Security Modules</h1>
+        <p style="max-width: 600px; font-size: 1.05rem;">
+          Drie krachtige modules ontwikkeld om IT-professionals en MSP's te helpen bij het beveiligen en monitoren van Microsoft 365-omgevingen.
+        </p>
+      </div>
+    </section>
+
+    <!-- Risky User Analyzer -->
+    <section class="section" id="risky-user">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+          <div>
+            <div class="tool-badge badge-available">
+              <span class="badge-dot"></span>
+              Beschikbaar
+            </div>
+            <span class="section-label">Module 01</span>
+            <h2 style="margin-bottom: 1rem;">Risky User Analyzer</h2>
+            <p style="margin-bottom: 1.5rem;">
+              Detecteer en analyseer risicvolle gebruikers in je Microsoft 365-tenant. De module koppelt aan Microsoft Identity Protection om een volledig beeld te geven van gebruikers met verhoogd risico.
+            </p>
+            <p style="margin-bottom: 2rem;">
+              Zie in één oogopslag wie risicvol is, wat de oorzaak is en welke acties worden aanbevolen — van wachtwoordreset tot het blokkeren van een account.
+            </p>
+            <div class="tool-features">
+              <div class="tool-feature">
+                <span class="tool-feature-icon">▸</span>
+                Koppeling met Microsoft Identity Protection
+              </div>
+              <div class="tool-feature">
+                <span class="tool-feature-icon">▸</span>
+                Risiconiveau: laag, gemiddeld, hoog en kritiek
+              </div>
+              <div class="tool-feature">
+                <span class="tool-feature-icon">▸</span>
+                Overzicht van risicodetails per gebruiker
+              </div>
+              <div class="tool-feature">
+                <span class="tool-feature-icon">▸</span>
+                Aanbevolen herstelacties per gebruiker
+              </div>
+              <div class="tool-feature">
+                <span class="tool-feature-icon">▸</span>
+                Veilige OAuth2-authenticatie
+              </div>
+            </div>
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="https://github.com/CloudGuard365" class="btn btn-primary" target="_blank" rel="noopener">Bekijk op GitHub →</a>
+              <a href="contact.html" class="btn btn-secondary">Meer info aanvragen</a>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="background: var(--color-bg-secondary);">
+              <div style="font-size: 0.75rem; color: var(--color-text-muted); margin-bottom: 1rem; font-family: monospace;">risky_user_analyzer.py</div>
+              <pre style="font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--color-text-secondary); white-space: pre-wrap; line-height: 1.8;"><code><span style="color: #8b949e"># Stap 1: Inloggen</span>
+python app.py
+
+<span style="color: #8b949e"># Stap 2: Browser opent automatisch</span>
+<span style="color: #3fb950">✓</span> OAuth2 login gelukt
+
+<span style="color: #8b949e"># Stap 3: Resultaten</span>
+Gevonden: <span style="color: #f85149">3 high-risk</span> gebruikers
+         <span style="color: #d29922">7 medium-risk</span> gebruikers
+         <span style="color: #3fb950">12 low-risk</span> gebruikers</code></pre>
+            </div>
+            <div class="card" style="margin-top: 1rem;">
+              <h4 style="margin-bottom: 0.75rem;">Vereiste permissies</h4>
+              <div class="tool-feature" style="border-color: transparent; padding: 0.25rem 0;">
+                <span class="tool-feature-icon">▸</span>
+                <span style="font-size: 0.8rem; font-family: monospace; color: var(--color-accent-blue);">IdentityRiskyUser.Read.All</span>
+              </div>
+              <div class="tool-feature" style="border-color: transparent; padding: 0.25rem 0;">
+                <span class="tool-feature-icon">▸</span>
+                <span style="font-size: 0.8rem; font-family: monospace; color: var(--color-accent-blue);">User.Read.All</span>
+              </div>
+              <div class="tool-feature" style="border-color: transparent; padding: 0.25rem 0;">
+                <span class="tool-feature-icon">▸</span>
+                <span style="font-size: 0.8rem; font-family: monospace; color: var(--color-accent-blue);">AuditLog.Read.All</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="border-top: 1px solid var(--color-border);"></div>
+
+    <!-- Microsoft 365 Analyzer -->
+    <section class="section" id="m365-analyzer" style="background: var(--color-bg-secondary);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+          <div>
+            <div class="card" style="background: var(--color-bg-primary);">
+              <h4 style="margin-bottom: 1rem;">Scan categorieën</h4>
+              <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                <div class="tool-feature" style="padding: 0.4rem 0;">
+                  <span style="font-size: 0.9rem;">🔐</span>
+                  <span style="font-size: 0.85rem;">Identiteit</span>
+                </div>
+                <div class="tool-feature" style="padding: 0.4rem 0;">
+                  <span style="font-size: 0.9rem;">🚪</span>
+                  <span style="font-size: 0.85rem;">Conditional Access</span>
+                </div>
+                <div class="tool-feature" style="padding: 0.4rem 0;">
+                  <span style="font-size: 0.9rem;">🛡️</span>
+                  <span style="font-size: 0.85rem;">Defender</span>
+                </div>
+                <div class="tool-feature" style="padding: 0.4rem 0;">
+                  <span style="font-size: 0.9rem;">💻</span>
+                  <span style="font-size: 0.85rem;">Devices</span>
+                </div>
+                <div class="tool-feature" style="padding: 0.4rem 0;">
+                  <span style="font-size: 0.9rem;">📁</span>
+                  <span style="font-size: 0.85rem;">SharePoint</span>
+                </div>
+                <div class="tool-feature" style="padding: 0.4rem 0;">
+                  <span style="font-size: 0.9rem;">💬</span>
+                  <span style="font-size: 0.85rem;">Teams</span>
+                </div>
+                <div class="tool-feature" style="padding: 0.4rem 0;">
+                  <span style="font-size: 0.9rem;">📋</span>
+                  <span style="font-size: 0.85rem;">Licenties</span>
+                </div>
+                <div class="tool-feature" style="padding: 0.4rem 0;">
+                  <span style="font-size: 0.9rem;">✅</span>
+                  <span style="font-size: 0.85rem;">Compliance</span>
+                </div>
+                <div class="tool-feature" style="padding: 0.4rem 0;">
+                  <span style="font-size: 0.9rem;">⚙️</span>
+                  <span style="font-size: 0.85rem;">Tenant-wide</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="tool-badge badge-available">
+              <span class="badge-dot"></span>
+              Beschikbaar
+            </div>
+            <span class="section-label">Module 02</span>
+            <h2 style="margin-bottom: 1rem;">Microsoft 365 Analyzer</h2>
+            <p style="margin-bottom: 1.5rem;">
+              Een volledige health check van je Microsoft 365-tenant verdeeld over 9 categorieën. De Analyzer geeft een gestructureerd overzicht van beveiligingsinstellingen, configuratieproblemen en aanbevolen verbeteringen.
+            </p>
+            <p style="margin-bottom: 2rem;">
+              Ideaal voor security-audits, onboarding van nieuwe klanten of periodieke controles van bestaande tenants.
+            </p>
+            <div class="tool-features">
+              <div class="tool-feature">
+                <span class="tool-feature-icon">▸</span>
+                9 scan categorieën in één overzicht
+              </div>
+              <div class="tool-feature">
+                <span class="tool-feature-icon">▸</span>
+                Visueel dashboard met resultaten per categorie
+              </div>
+              <div class="tool-feature">
+                <span class="tool-feature-icon">▸</span>
+                Resultaten worden lokaal opgeslagen
+              </div>
+              <div class="tool-feature">
+                <span class="tool-feature-icon">▸</span>
+                Ideaal voor security-audits en klant-onboardings
+              </div>
+              <div class="tool-feature">
+                <span class="tool-feature-icon">▸</span>
+                Geen client secret of app registration nodig
+              </div>
+            </div>
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="https://github.com/CloudGuard365" class="btn btn-primary" target="_blank" rel="noopener">Bekijk op GitHub →</a>
+              <a href="contact.html" class="btn btn-secondary">Meer info aanvragen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="border-top: 1px solid var(--color-border);"></div>
+
+    <!-- Microsoft 365 Alerting -->
+    <section class="section" id="m365-alerting">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+          <div>
+            <div class="tool-badge badge-soon">
+              <span class="badge-dot"></span>
+              Binnenkort beschikbaar
+            </div>
+            <span class="section-label">Module 03</span>
+            <h2 style="margin-bottom: 1rem;">Microsoft 365 Alerting</h2>
+            <p style="margin-bottom: 1.5rem;">
+              Ontvang proactieve meldingen wanneer er iets afwijkends gebeurt in je Microsoft 365-omgeving. Van nieuwe admin-roltoewijzingen tot verdachte aanmeldingen en beleidswijzigingen.
+            </p>
+            <p style="margin-bottom: 2rem;">
+              Stel in welke events je wilt monitoren, kies je notificatiekanaal (e-mail of Teams) en laat de module continu waken over je tenant — of meerdere tegelijk.
+            </p>
+            <div class="tool-features">
+              <div class="tool-feature">
+                <span class="tool-feature-icon">▸</span>
+                Automatische meldingen bij verdachte activiteiten
+              </div>
+              <div class="tool-feature">
+                <span class="tool-feature-icon">▸</span>
+                Notificaties via e-mail of Microsoft Teams
+              </div>
+              <div class="tool-feature">
+                <span class="tool-feature-icon">▸</span>
+                Zelf in te stellen welke events je wilt ontvangen
+              </div>
+              <div class="tool-feature">
+                <span class="tool-feature-icon">▸</span>
+                Logboek van alle alerthistorie
+              </div>
+              <div class="tool-feature">
+                <span class="tool-feature-icon">▸</span>
+                Ondersteuning voor meerdere tenants
+              </div>
+            </div>
+            <div style="margin-top: 2rem;">
+              <div class="alert alert-info">
+                Deze module is in ontwikkeling. Meld je aan voor updates via de <a href="contact.html">contactpagina</a>.
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card">
+              <h4 style="margin-bottom: 1rem;">Geplande alerttypen</h4>
+              <div class="feature-list">
+                <div class="feature-item">
+                  <div class="feature-check" style="background: rgba(210,153,34,0.1); border-color: rgba(210,153,34,0.3); color: var(--color-warning);">!</div>
+                  <div>
+                    <strong style="font-size: 0.875rem;">Admin rol toegewezen</strong>
+                    <p style="font-size: 0.8rem; margin: 0;">Melding bij nieuwe Global Admin of andere beheerdersrollen</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-check" style="background: rgba(248,81,73,0.1); border-color: rgba(248,81,73,0.3); color: var(--color-danger);">!</div>
+                  <div>
+                    <strong style="font-size: 0.875rem;">Verdachte aanmelding</strong>
+                    <p style="font-size: 0.8rem; margin: 0;">Alert bij aanmeldingen vanuit onbekende locaties of apparaten</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-check" style="background: rgba(210,153,34,0.1); border-color: rgba(210,153,34,0.3); color: var(--color-warning);">!</div>
+                  <div>
+                    <strong style="font-size: 0.875rem;">Conditional Access gewijzigd</strong>
+                    <p style="font-size: 0.8rem; margin: 0;">Melding bij aanpassing van toegangsbeleid</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-check" style="background: rgba(45,140,240,0.1); border-color: rgba(45,140,240,0.3); color: var(--color-accent-blue);">i</div>
+                  <div>
+                    <strong style="font-size: 0.875rem;">Licentiewijziging</strong>
+                    <p style="font-size: 0.8rem; margin: 0;">Alert bij grote wijzigingen in licentietoewijzingen</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="assets/img/logo.png" alt="CloudGuard365" style="height: 48px; width: auto; margin-bottom: 1rem;">
+          <p>Microsoft 365 security tools voor IT-professionals en MSP's.</p>
+        </div>
+        <div class="footer-nav-group">
+          <p class="footer-heading">Navigatie</p>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="tools.html" class="footer-link">Modules</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-group">
+          <p class="footer-heading">Modules</p>
+          <ul class="footer-links">
+            <li><a href="tools.html#risky-user" class="footer-link">Risky User Analyzer</a></li>
+            <li><a href="tools.html#m365-analyzer" class="footer-link">M365 Analyzer</a></li>
+            <li><a href="tools.html#m365-alerting" class="footer-link">M365 Alerting</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-group">
+          <p class="footer-heading">GitHub</p>
+          <ul class="footer-links">
+            <li><a href="https://github.com/CloudGuard365" class="footer-link" target="_blank" rel="noopener">CloudGuard365 →</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 CloudGuard365. Alle rechten voorbehouden.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
