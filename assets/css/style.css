@@ -1170,19 +1170,6 @@ p {
 }
 
 /* Professionele sectiedeler met gradient en label */
-.section-line {
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--color-accent-blue) 40%,
-    var(--color-accent-cyan) 60%,
-    transparent
-  );
-  opacity: 0.4;
-  margin-bottom: var(--space-3xl);
-}
-
 .section-divider {
   display: flex;
   align-items: center;
