@@ -1192,14 +1192,6 @@ p {
   opacity: 0.4;
 }
 
-.section-divider--line {
-  margin-bottom: var(--space-xl);
-}
-
-.section-divider--line::after {
-  display: none;
-}
-
 .section-divider span {
   font-size: 0.72rem;
   font-weight: 700;
