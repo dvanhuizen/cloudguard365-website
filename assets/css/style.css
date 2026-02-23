@@ -1117,6 +1117,10 @@ p {
   padding: var(--space-3xl) 0;
 }
 
+#modules {
+  border-top: 1px solid rgba(45, 140, 240, 0.2);
+}
+
 .cta-banner-content {
   text-align: center;
 }
